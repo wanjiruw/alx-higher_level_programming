@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
+    """give you the index and the args if no args give you 0 args """
     import sys
-    if len(sys.argv) == 1:
+
+    counter = len(sys.argv) - 1
+    if counter == 0:
         print("0 arguments.")
-    elif len(sys.argv) == 2:
+    elif counter == 1:
         print("1 argument:")
-        print("1: {}".format(sys.argv[1]))
-    elif len(sys.argv) > 2:
-        j = 1
-        print("{} arguments:".format((len(sys.argv) - 1)))
-        for i in range(len(sys.argv[1:])):
-            print("{}: {:s}".format(j, sys.argv[j]))
-            j = j + 1
+    else:
+        print("{} arguments:".format(counter))
+    for index in range(counter):
+        print("{}: {}".format(index + 1, sys.argv[index + 1]))
