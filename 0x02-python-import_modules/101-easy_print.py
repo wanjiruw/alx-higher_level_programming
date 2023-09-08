@@ -1,2 +1,2 @@
-#!/usr/bin/env python
- print("#pythoniscool")
+#!/usr/bin/python3
+str("#pythoniscool\n", end="")
