@@ -2,4 +2,4 @@
 def multiple_returns(sentence):
     if len(sentence) == 0:
         character = None
-    return(len(sentence), character)
+    return(len(sentence), character[0])
