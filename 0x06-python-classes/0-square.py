@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
-""" an empty class Square that defines a square """
+""" python3 -c 'print(__import__("my_module").__doc__)' """
 
 class Square:
 
-""" this is an empty class """
-pass
+""" python3 -c 'print(__import__("my_module").MyClass.__doc__)' """
+	pass
