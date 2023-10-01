@@ -1,13 +1,13 @@
 #!usr/bin/python3
 def safe_print_list(my_list=[], x=0):
     try:
-        k = 0
+        n = 0
         for i in range(x):
             print(my_list[i], end= "")
-            k += 1
+            n += 1
         print()
     except IndexError:
         print()
-        return k
+        return n
     else:
-        return k
+        return n
